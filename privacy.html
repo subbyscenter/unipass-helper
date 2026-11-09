@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유니패스 API 도우미 개인정보처리방침</title>
+<style>
+  body { max-width: 720px; margin: 40px auto; padding: 0 20px; font-family: "Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif; line-height: 1.7; color: #0f172a; }
+  h1 { font-size: 22px; } h2 { font-size: 17px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<h1>유니패스 API 도우미 개인정보처리방침</h1>
+<p>시행일: 2026년 11월 9일</p>
+<p>유니패스 API 도우미(이하 "확장 프로그램")는 관세청과 관계없는 개인이 만든 크롬 확장 프로그램입니다. 이 방침은 확장 프로그램이 어떤 정보를 다루는지 설명합니다.</p>
+
+<h2>1. 다루는 정보</h2>
+<ul>
+  <li><b>API 인증키</b>: 사용자가 키 테스트 화면에 입력한 유니패스 OpenAPI 인증키</li>
+  <li><b>키 테스트 입력값</b>: 개인통관고유부호, 이름, 휴대폰 번호</li>
+  <li><b>안내 진행 상태</b>: 도우미가 켜져 있는지와 현재 안내 단계</li>
+</ul>
+
+<h2>2. 저장 위치</h2>
+<p>API 인증키와 안내 진행 상태는 사용자 기기의 크롬 확장 저장소(chrome.storage.local)에만 저장됩니다. 개인통관고유부호, 이름, 휴대폰 번호는 저장하지 않습니다. 개발자는 이 정보를 받거나 볼 수 없습니다.</p>
+
+<h2>3. 외부 전송</h2>
+<ul>
+  <li>사용자가 [조회 테스트]를 누를 때에만 인증키, 개인통관고유부호, 이름, 휴대폰 번호가 관세청 유니패스 API(unipass.customs.go.kr)로 직접 전송됩니다.</li>
+  <li>안내 단계 데이터(JSON)를 GitHub(api.github.com)에서 받아옵니다. 이때 사용자 정보는 보내지 않습니다.</li>
+  <li>그 밖의 서버로는 어떤 정보도 보내지 않습니다.</li>
+</ul>
+
+<h2>4. 판매·공유</h2>
+<p>수집한 정보를 판매하거나 제3자와 공유하지 않으며, 확장 프로그램의 목적 외의 용도나 신용도 판단에 사용하지 않습니다.</p>
+
+<h2>5. 삭제</h2>
+<p>확장 프로그램을 삭제하면 기기에 저장된 모든 정보가 함께 삭제됩니다.</p>
+
+<h2>6. 문의</h2>
+<p><a href="https://github.com/subbyscenter/unipass-helper/issues">https://github.com/subbyscenter/unipass-helper/issues</a></p>
+</body>
+</html>
